@@ -23,7 +23,7 @@ const PostCard = ({ post }) => {
       />
     </div> */}
       <div className="relative overflow-hidden shadow=md pb-80 mb-6">
-        <img src={post.featuredImage.url} alt={post.title} className="object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg" />
+        <img src={post.featuredImage.url} alt={post.title} className="object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg transform transition duration-500 hover:scale-110" />
       </div>
       <h1 className='transition duration-100 text-center mv-8 cursor-pointer hover:text-pink-600 text-3xl font-semibold'>
         <Link href={`/post/${post.slug}`}>{post.title}</Link>

@@ -48,7 +48,7 @@ const PostDetail = ({post}) => {
   return (
     <div className='bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8'>
       <div className="relative overflow-hidden shadow-md mb-6">
-        <img src={post.featuredImage.url} alt={post.title} className="object-top h-full w-full rounded-t-lg" />
+        <img src={post.featuredImage.url} alt={post.title} className="object-top h-full w-full rounded-t-lg transform transition duration-500 hover:scale-110" />
       </div>
       <div className="px-4 lg:px-0">
         <div className="flex items-center mb-8 w-full">

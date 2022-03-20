@@ -15,9 +15,10 @@ const Categories=()=> {
       Categories
     </h3>
     {
-      categories.map((category)=>(
-        <Link key={category.slug} href={`category/${category.slug}`}>
-          <span className="cursor-pointer block pb-3 mb-3">{category.name}</span>
+      categories.map((category,index)=>(
+        <Link key={index} href={`/category/${category.slug}`}>
+          {/* <span className="cursor-pointer block pb-3 mb-3">{category.name}</span> */}
+          <span className={`cursor-pointer block ${(index === categories.length - 1) ? 'hidden' : 'border-b'} pb-3 mb-3`}>{category.name}</span>
         </Link>
       ))
     }

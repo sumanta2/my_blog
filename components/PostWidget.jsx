@@ -32,7 +32,7 @@ const PostWidget=({categories,slug})=> {
                  
         <div key={post.title} className="flex items-center w-full mb-4" >
             <div className="w-16 flex-none">
-              <img  alt={post.title} height="60px" width="60px" style={{"width":"60px!important"}} className='align-middle rounded-full' src={post.featuredImage.url}/>
+              <img  alt={post.title} height="60px" width="60px" style={{"width":"60px!important"}} className='align-middle rounded-full transform transition duration-500 hover:scale-110' src={post.featuredImage.url}/>
 
             </div>
             <div className="flex-grow ml-4">
