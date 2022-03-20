@@ -2,6 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 
 const Author = ({ author }) => {
+  // {console.log("sumanta"+author.name)}
+
   return (
     <div className='text-center mt-20 mb-8 pb-12 pt-7 relative rounded-lg bg-black bg-opacity-20'>
 
